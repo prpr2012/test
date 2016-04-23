@@ -1,0 +1,152 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="前端开发工程师" />
+<meta name="Description" content="前端开发工程师是注重用户体验的一个导航网站，主要关注WEB技术、前端开发、JAVA开发、网络等最新的网址。" />
+<meta name="Keywords" content="ray,WEB技术,前端开发,flex开发" />
+<meta name="author" content="ray" />
+<meta name="google-site-verification" content="6dS7Q2vbUtQ8DsqHOuQ4-Fd4qxBSA370kQ_QPkImZUU" />
+<meta name="robots" content="index, ray" />
+<meta name="googlebot" content="index, ray" />
+<title>前端开发工程师-导航网站</title>
+<link type="text/css" href="../css/website.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<style>
+  #box1{
+     width: 100px;
+     height: 100px;
+     background: red;
+     position: absolute;
+     left:0px;
+     top:0px;
+  }
+</style>
+</head>
+<body>
+
+<div id="header" class="clearfix">
+  <div id="search">
+    <div class="logo"> <a href="http://jquery.com/" target="_blank" ><img src="../images/logo.png" width="70" height="70" alt="" /></a> </div>
+    <form name="search" action="http://www.baidu.com/s" target="_blank">
+      <input class="seachinput" id="word" type="text" name="word" autocomplete="on" value=""/>
+      <div id="search_sort" style="display:none;">
+        <ul>
+          <li>
+            <input value="百度" type="submit" name="baidu" tabindex="1" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.google.com.hk/search?q='+search.word.value,'')" value="谷歌" type="button" name="google" tabindex="2"/>
+          </li>
+          <li>
+            <input onclick="window.open('http://www.gougou.com/search?search='+search.word.value,'')" value="狗狗" type="button" name="gougou" tabindex="3" />
+          </li>
+          <li>
+            <input onclick="window.open('http://zh.wikipedia.org/wiki/Special:Search?search='+search.word.value,'')" value="维基百科" type="button" name="go" tabindex="4"/>
+          </li>
+          <li><a href="#" class="extended"></a></li>
+        </ul>
+        <ul class="more_search" >
+          <li>
+            <input value="百度" type="submit" name="baidu" tabindex="1" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.google.com.hk/search?q='+search.word.value,'')" value="谷歌" type="button" name="google" tabindex="2"/>
+          </li>
+          <li>
+            <input onclick="window.open('http://www.gougou.com/search?search='+search.word.value,'')" value="狗狗" type="button" name="gougou" tabindex="3" />
+          </li>
+          <li>
+            <input onclick="window.open('http://zh.wikipedia.org/wiki/Special:Search?search='+search.word.value,'')" value="维基百科" type="button" name="go" tabindex="4"/>
+          </li>
+          <!-- <li><span style="font-size:18px; color:#eee; ">&uArr;</span></li>-->
+          <li><a href="#" class="extend"></a></li>
+          <li>
+            <input onclick="window.open('http://web.gougou.com/search?search='+search.word.value,'')" value="SOSO" type="button" name="w" tabindex="6" />
+          </li>
+          <li>
+            <input onclick="window.open('http://cn.bing.com/search?q='+search.word.value,'')" value="BING" type="button" name="bing" tabindex="7" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.youdao.com/search?q='+search.word.value,'')" value="有道" type="button" name="youdao" tabindex="8" />
+          </li>
+         
+          <li>
+            <input onclick="window.open('http://www.sogou.com/web?query='+search.word.value,'')" value="搜狗" type="button" name="sogou" tabindex="9" />
+          </li>
+          <li>
+            <input onclick="window.open('http://s.taobao.com/search?q='+search.word.value,'')" value="淘宝" type="button" name="taobao" tabindex="10" />
+          </li>
+          <li>
+            <input onclick="window.open('http://search.360buy.com/Search?keyword='+search.word.value,'')" value="京东" type="button" name="jingdong" tabindex="11" />
+          </li>
+          <li>
+            <input onclick="window.open('http://search.dangdang.com/search.php?key='+search.word.value,'')" value="当当" type="button" name="dangdang" tabindex="11" />
+          </li>
+          <li>
+            <input onclick="window.open('http://youa.baidu.com/search/s?search_domain=1&category=0&keyword='+search.word.value,'')" value="有啊" type="button" name="youa" tabindex="13" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&url=search-alias%3Daps&field-keywords='+search.word.value,'')" value="卓越" type="button" name="amazon" tabindex="12" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.vancl.com/Product/SearchNew.aspx?new=1&k='+search.word.value,'')" value="凡客" type="button" name="vancl" tabindex="14" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.verycd.com/search/folders/'+search.word.value,'')" value="电驴" type="button" name="verycd" tabindex="15" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.soku.com/search_video/q_'+search.word.value,'')" value="优酷" type="button" name="soku" tabindex="16" />
+          </li>
+          <li>
+            <input onclick="window.open('http://so.tudou.com/search_video/q_'+search.word.value,'')" value="土豆" type="button" name="tudou" tabindex="17" />
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="clearfix">
+    <div id="content" class="content">
+    </div>
+    
+</div>
+
+<div id="footer_wrapper">
+  <div id="footer">
+       
+  </div> 
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../tpl/build/template.js"></script>
+<script type="text/javascript" src="../js/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/backbone/backbone.js"></script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript">
+   var web = function( id, tpl, data ){
+      this.id = id;
+      this.data = data;
+      this.tpl = tpl;
+  }
+  web.prototype= {           
+      render:function(){
+          this._makeHtml();          
+      },     
+      _makeHtml:function(){                    
+          var tpl_v1 = template(this.tpl, this.data);                                     
+          $(this.id).append(tpl_v1);         
+      }
+}
+var web1 = new web('#content','vl',config);
+var web2 = new web('#footer','footer',{});
+web1.render();
+web2.render();
+$(".collapse").collapse();
+</script>
+
+</body>
+</html>

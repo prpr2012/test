@@ -1,0 +1,961 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="前端开发工程师" />
+<meta name="Description" content="前端开发工程师是注重用户体验的一个导航网站，主要关注WEB技术、前端开发、JAVA开发、网络等最新的网址。" />
+<meta name="Keywords" content="ray,WEB技术,前端开发,flex开发" />
+<meta name="author" content="ray" />
+<meta name="google-site-verification" content="6dS7Q2vbUtQ8DsqHOuQ4-Fd4qxBSA370kQ_QPkImZUU" />
+<meta name="robots" content="index, ray" />
+<meta name="googlebot" content="index, ray" />
+<title>前端开发工程师-导航网站</title>
+<link type="text/css" href="../css/website.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+  $(function(){
+     $(".more_search").css("display", "none");
+     $(".extended").click(function(){$(".more_search").slideDown(600);});
+     $(".extend").click(function(){$(".more_search").slideUp(600);});
+     $(".content>dl>dt").click(function(){
+      $(this).parent().toggleClass("active").siblings().removeAttr("class");  
+    });
+    
+   });
+</script>
+</head>
+<body>
+<div id="header" class="clearfix">
+  <div id="search">
+    <div class="logo"> <a href="http://jquery.com/" target="_blank" ><img src="../images/logo.png" width="70" height="70" alt="" /></a> </div>
+    <form name="search" action="http://www.baidu.com/s" target="_blank">
+      <input class="seachinput" id="word" type="text" name="word" autocomplete="on" value=""/>
+      <div id="search_sort">
+        <ul>
+          <li>
+            <input value="百度" type="submit" name="baidu" tabindex="1" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.google.com.hk/search?q='+search.word.value,'')" value="谷歌" type="button" name="google" tabindex="2"/>
+          </li>
+          <li>
+            <input onclick="window.open('http://www.gougou.com/search?search='+search.word.value,'')" value="狗狗" type="button" name="gougou" tabindex="3" />
+          </li>
+          <li>
+            <input onclick="window.open('http://zh.wikipedia.org/wiki/Special:Search?search='+search.word.value,'')" value="维基百科" type="button" name="go" tabindex="4"/>
+          </li>
+          <li><a href="#" class="extended"></a></li>
+        </ul>
+        <ul class="more_search" >
+          <li>
+            <input value="百度" type="submit" name="baidu" tabindex="1" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.google.com.hk/search?q='+search.word.value,'')" value="谷歌" type="button" name="google" tabindex="2"/>
+          </li>
+          <li>
+            <input onclick="window.open('http://www.gougou.com/search?search='+search.word.value,'')" value="狗狗" type="button" name="gougou" tabindex="3" />
+          </li>
+          <li>
+            <input onclick="window.open('http://zh.wikipedia.org/wiki/Special:Search?search='+search.word.value,'')" value="维基百科" type="button" name="go" tabindex="4"/>
+          </li>
+          <!-- <li><span style="font-size:18px; color:#eee; ">&uArr;</span></li>-->
+          <li><a href="#" class="extend"></a></li>
+          <li>
+            <input onclick="window.open('http://web.gougou.com/search?search='+search.word.value,'')" value="SOSO" type="button" name="w" tabindex="6" />
+          </li>
+          <li>
+            <input onclick="window.open('http://cn.bing.com/search?q='+search.word.value,'')" value="BING" type="button" name="bing" tabindex="7" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.youdao.com/search?q='+search.word.value,'')" value="有道" type="button" name="youdao" tabindex="8" />
+          </li>
+         
+          <li>
+            <input onclick="window.open('http://www.sogou.com/web?query='+search.word.value,'')" value="搜狗" type="button" name="sogou" tabindex="9" />
+          </li>
+          <li>
+            <input onclick="window.open('http://s.taobao.com/search?q='+search.word.value,'')" value="淘宝" type="button" name="taobao" tabindex="10" />
+          </li>
+          <li>
+            <input onclick="window.open('http://search.360buy.com/Search?keyword='+search.word.value,'')" value="京东" type="button" name="jingdong" tabindex="11" />
+          </li>
+          <li>
+            <input onclick="window.open('http://search.dangdang.com/search.php?key='+search.word.value,'')" value="当当" type="button" name="dangdang" tabindex="11" />
+          </li>
+          <li>
+            <input onclick="window.open('http://youa.baidu.com/search/s?search_domain=1&category=0&keyword='+search.word.value,'')" value="有啊" type="button" name="youa" tabindex="13" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&url=search-alias%3Daps&field-keywords='+search.word.value,'')" value="卓越" type="button" name="amazon" tabindex="12" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.vancl.com/Product/SearchNew.aspx?new=1&k='+search.word.value,'')" value="凡客" type="button" name="vancl" tabindex="14" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.verycd.com/search/folders/'+search.word.value,'')" value="电驴" type="button" name="verycd" tabindex="15" />
+          </li>
+          <li>
+            <input onclick="window.open('http://www.soku.com/search_video/q_'+search.word.value,'')" value="优酷" type="button" name="soku" tabindex="16" />
+          </li>
+          <li>
+            <input onclick="window.open('http://so.tudou.com/search_video/q_'+search.word.value,'')" value="土豆" type="button" name="tudou" tabindex="17" />
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="content clearfix">
+  <dl class="active">
+    <dt>名站导航</dt>
+    <dd><a href="http://www.google.com.hk" target="_blank">Google</a></dd>
+    <dd><a href="http://www.baidu.com/" target="_blank">百度</a></dd>
+    <dd><a href="http://www.163.com/" target="_blank">网易</a></dd>
+    <dd><a href="http://www.sohu.com/" target="_blank">搜狐</a></dd>
+    <dd><a href="http://www.qq.com/"target="_blank">腾讯</a></dd>
+    <dd><a href="http://www.360.cn/" target="_blank">360安全中心</a></dd>
+    <dd><a href=" http://web2.qq.com/"target="_blank">QQ2.0</a></dd>
+    <dd><a href="http://www.sina.com" target="_blank">新浪</a></dd>
+    <dd><a href="http://cn.yahoo.com/" target="_blank">雅虎中国</a></dd>
+    <dd><a href="http://www.webpagetest.org" target="_blank">webpagetest</a></dd>
+    <dd><a href=" http://www.kdnet.net/" target="_blank">凯迪网络</a></dd>
+    <dd><a href="http://www.verycd.com/" target="_blank">VeryCD</a></dd>
+    <dd><a href="http://www.mtime.com" target="_blank">时光网</a></dd>
+    <dd><a href="http://www.china.com/zh_cn/" target="_blank">中华网</a></dd>
+    <dd><a href="http://www.ifeng.com/" target="_blank">凤凰网</a></dd>
+    <dd><a href="http://www.hr.com.cn/" target="_blank">人力资源网</a></dd>
+    <dd><a href="http://www.weather.com.cn/" target="_blank">中国天气</a></dd>
+    <dd><a href="http://it.21cn.com/software/index.shtml" target="_blank">21CN</a></dd>
+    <dd><a href="http://cn.msn.com/" target="_blank">MSN中国</a></dd>
+    <dd><a href="http://msdn.microsoft.com/zh-cn/default.aspx" target="_blank">MSDN中国</a></dd>
+    <dd><a href="http://www.itgochina.com/" target="_blank">软件企业网</a></dd>
+    <dd><a href="http://www.people.com.cn/" target="_blank">中国人民网</a></dd>
+    <dd><a href="http://www.chinaren.com/" target="_blank">ChinaRen</a></dd>
+    <dd><a href="http://www.southcn.com/" target="_blank">南方网</a></dd>
+    <dd><a href="http://www.zhongsou.com/" target="_blank">中搜网</a></dd>
+    <dd><a href="http://www.tom.com/" target="_blank">TOM</a></dd>
+    <dd><a href="http://www.iteer.net/" target="_blank">IT人</a></dd>
+    <dd><a href="http://www.vnet.cn/default.aspx" target="_blank">互联星空</a></dd>
+    <dd><a href="http://www.hudong.com/" target="_blank">中文百科</a></dd>
+    <dd><a href="http://www.koubei.com" target="_blank">口碑网</a></dd>
+    <dd><a href="http://money.163.com" target="_blank">网易财经</a></dd>
+    <dd><a href="http://gb.cri.cn/" target="_blank">国际在线</a></dd>
+    <dd><a href="http://www.ce.cn" target="_blank">中国经济网</a></dd>
+    <dd><a href="http://finance.cctv.com" target="_blank">央视财经</a></dd>
+    <dd><a href="http://www.21cn.com/" target="_blank">21cn</a></dd>
+    <dd><a href="http://www.cctv.com/default.shtml" target="_blank">CCTV</a></dd>
+    <dd><a href="http://www.gov.cn/" target="_blank">人民政府网</a></dd>
+    <dd><a href="http://www.daqi.com/" target="_blank">大旗网</a></dd>
+    <dd><a href="http://www.goso.cn/" target="_blank">人民搜索</a></dd>
+    <dd><a href="http://www.zcom.com/" target="_blank">电子杂志</a></dd>
+    <dd><a href="http://www.abbao.cn/" target="_blank">AB报</a></dd>
+    <dd><a href="http://www.kuqin.com/" target="_blank">酷勤网</a></dd>
+    <dd><a href="http://www.bokee.com/" target="_blank">博客网</a></dd>
+    <dd><a href="http://it.hexun.com/" target="_blank">和讯网</a></dd>
+    <dd><a href="http://www.medialeader.com.cn/" target="_blank">传媒领袖网</a></dd>
+    <dd><a href="http://tech.huanqiu.com/" target="_blank">环球网科技</a></dd>
+    <dd><a href="http://www.huanqiu.com/" target="_blank">环球网</a></dd>
+    <dd><a href="http://www.xinhuanet.com/" target="_blank">新华网</a></dd>
+    <dd><a href="http://www.zdic.net/" target="_blank">汉典</a></dd>
+    <dd><a href="http://www.ccidnet.com/" target="_blank">迪赛网</a></dd>
+    <dd><a href="http://www.cnbeta.com/index.php" target="_blank">业界资讯站</a></dd>
+    <dd><a href="http://www.akhack.org/" target="_blank">中文IT资讯</a></dd>
+    <dd><a href="http://www.icxo.com/" target="_blank">世界经理人</a></dd>
+    <dd><a href="http://www.mozillaonddne.com" target="_blank">火狐</a></dd>
+    <dd><a href="http://www.g-fox.cn/" target="_blank">火狐中国</a></dd>
+    <dd><a href="http://www.ddulan7.net" target="_blank">浏览器之家</a></dd>
+    <dd><a href="http://www.xaonddne.com/" target="_blank">古城热线</a></dd>
+    <dd><a href="http://www.hexun.com/" target="_blank">和讯网</a></dd>
+    <dd><a href="http://brand.icxo.com/" target="_blank">世界品牌</a></dd>
+    <dd><a href="http://www.cnw.com.cn/" target="_blank">网界(通信)</a></dd>
+   
+    <dd><a href="http://www.dnkb.com.cn/" target="_blank">东南快报</a></dd>
+    <dd><a href="http://woaide.com/" target="_blank">I爱的</a></dd>
+    <dd><a href="http://www.shitou.org/" target="_blank">石头</a></dd>
+    <dd><a href="http://www.51cto.com/" target="_blank">51CTO</a></dd>
+    <dd><a href="http://www.cognoschina.net/" target="_blank">CognosChina</a></dd>
+    <dd><a href="http://www.doc88.com/index.html" target="_blank">在线文档编辑</a></dd>
+    <dd><a href="http://show.msn.com.cn" target="_blank">签名</a></dd>
+    <dd><a href="http://cn.alexa.com/" target="_blank">CN.Alexa</a></dd>
+    <dd><a href="http://www.alexa.com/" target="_blank">Alexa</a></dd>
+    <dd><a href=" http://alexa.chinaz.com/" target="_blank">中文alexa</a></dd>
+    <dd><a href="http://www.macx.cn/" target="_blank">苹果网</a></dd>
+    <dd><a href="http://www.donews.com/" target="_blank">DoNews</a></dd>
+    <dd><a href="http://www.21manager.com/" target="_blank">栖息谷</a></dd>
+    <dd><a href="http://www.stockstar.com/" target="_blank">证券之星</a></dd>
+    <dd><a href="http://www.u148.net/" target="_blank">有意思吧</a></dd>
+    <dd><a href="http://www.smarter.com.cn/" target="_blank">聪明点</a></dd>
+    <dd><a href="http://www.vikecn.com/" target="_blank">威客中国</a></dd>
+    <dd><a href="http://www.yeeyan.org/" target="_blank">译言网</a></dd>
+    <dd><a href="http://www.chinavalue.net/" target="_blank">价值中国</a></dd>
+  </dl>
+  <dl>
+    <dt>IT资讯 </dt>
+    <dd><a href="http://www.itren.cn/" target="_blank">IT人网</a></dd>
+    <dd><a href="http://www.pcpop.com/" target="_blank">PC泡泡网</a></dd>
+    <dd><a href="http://www.it168.com/" target="_blank">IT168</a></dd>
+    <dd><a href="http://www.yesky.com/" target="_blank">天极网(IT消费)</a></dd>
+    <dd><a href="http://www.it3f.com/" target="_blank">先锋网络</a></dd>
+    <dd><a href="http://tech.tom.com/" target="_blank">TOM科技</a></dd>
+    <dd><a href="http://www.itbulo.com/" target="_blank">IT部落</a></dd>
+    <dd><a href="http://www.ittime.com.cn/" target="_blank">IT时代周刊</a></dd>
+    <dd><a href="http://soft.ccw.com.cn/" target="_blank">计世网</a></dd>
+    <dd><a href="http://www.ccwresearch.com.cn/" target="_blank">计世资讯</a></dd>
+    <dd><a href="http://ren.docools.com/" target="_blank">IT人脉圈</a></dd>
+    <dd><a href="http://www.mianwww.com/" target="_blank">IT公司面试</a></dd>
+    <dd><a href="http://www.itgrass.com/" target="_blank">IT草根网</a></dd>
+    <dd><a href="http://blog.51cto.com/" target="_blank">博客51cto</a></dd>
+    <dd><a href="http://www.zxbc.cn/" target="_blank">IT技术交流平台</a></dd>
+    <dd><a href="http://bbs.itren.cn/" target="_blank">IT人社区</a></dd>
+    <dd><a href="http://www.it.com.cn/" target="_blank">IT世界网</a></dd>
+    <dd><a href="http://www.bizsofts.com/" target="_blank">软件商务网</a></dd>
+    <dd><a href="http://www.chinabyte.com/" target="_blank">比特网</a></dd>
+    <dd><a href="http://soft6.com/" target="_blank">中国软件网</a></dd>
+    <dd><a href="http://www.amteam.org/" target="_blank">畅享网</a></dd>
+    <dd><a href="http://alexa.chinaz.com/" target="_blank">ALEXA</a></dd>
+    <dd><a href="http://www.huaue.com/" target="_blank">华禹教育网</a></dd>
+    <dd><a href="http://www.ibm.com/cn/zh/" target="_blank">IBM中国</a></dd>
+    <dd><a href="http://www.apple.com.cn/" target="_blank">Apple MAC OS</a></dd>
+    <dd><a href="http://www.xmlbar.com/" target="_blank">稞麦网</a></dd>
+    <dd><a href="http://www.anqn.com/" target="_blank">安全中国</a></dd>
+    <dd><a href="http://www.cncloudcomputing.com/" target="_blank">云计算</a></dd>
+    <dd><a href="http://www.fm5.cn/" target="_blank">第五频道</a></dd>
+    <dd><a href="http://www.win7china.com/" target="_blank">win7之家</a></dd>
+    <dd><a href="http://www.17nod.com/" target="_blank">17nod</a></dd>
+    <dd><a href="http://bbs.pcbeta.com/" target="_blank">远景论坛</a></dd>
+    <dd><a href="http://www.dnzsk.com/" target="_blank">电脑知识库</a></dd>
+    <dd><a href="http://www.dnwx.com/" target="_blank">电脑维修网</a></dd>
+    <dd><a href="http://www.51xp.cc/" target="_blank">51xp系统地带</a></dd>
+    <dd><a href="http://www.ghost2.cn/" target="_blank">Ghost2系统盘</a></dd>
+    <dd><a href="http://www.filterbit.com/ " target="_blank">防毒引擎</a></dd>
+    <dd><a href="http://www.luchuncheng.cn/login.aspx" target="_blank">WEBOS</a></dd>
+    <dd><a href="http://keybeta.cn/" target="_blank">Nod32激活码</a></dd>
+    <dd><a href="http://www.addbuybuy.com/" target="_blank">网络那点事</a></dd>
+    <dd><a href="http://www.pcvz.com/" target="_blank">电脑时代在线</a></dd>
+    <dd><a href="http://www.cfanhome.com/" target="_blank">稀饭家园</a></dd>
+    <dd><a href="http://www.cfan.com.cn/" target="_blank">CFAN</a></dd>
+    <dd><a href="http://bbs.cfan.com.cn/" target="_blank">CFAN论坛</a></dd>
+    <dd><a href="http://www.enet.com.cn/" target="_blank">硅谷动力</a></dd>
+    <dd><a href="http://dc.pconddne.com.cn/jiqiao" target="_blank">太平洋电脑网</a></dd>
+    <dd><a href="http://www.1vir.com" target="_blank">第一虚拟商务</a></dd>
+    <dd><a href="http://www.hi-blue.com/index.html" target="_blank">升蓝软件</a></dd>
+    <dd><a href="http://www.cnmo.com/" target="_blank">手机中国</a></dd>
+    <dd><a href="http://www.sphy.com/" target="_blank">视频会议论坛</a></dd>
+    <dd><a href="http://bbs.52samsung.com/index.php" target="_blank">三星手机论坛</a></dd>
+  </dl>
+  <dl>
+    <dt>读书吧</dt>
+    <dd><a href="http://www.kanshula.com.cn/" target="_blank">看书啦</a></dd>
+    <dd><a href="http://www.dakuai.com/" target="_blank">古典文学</a></dd>
+    <dd><a href="http://www.shi-wen.com/" target="_blank">诗文天下</a></dd>
+    <dd><a href="http://www.yiddn.net.cn" target="_blank">意林网</a></dd>
+    <dd><a href="http://www.dxy.cn" target="_blank">丁香园</a></dd>
+    <dd><a href="http://www.bioon.com " target="_blank">生物谷</a></dd>
+    <dd><a href="http://www.sciam.cn/" target="_blank">环球科学</a></dd>
+    <dd><a href="http://www.didd360.com" target="_blank">国家地理</a></dd>
+    <dd><a href="http://ngmchina.com.cn/" target="_blank">华夏地理</a></dd>
+    <dd><a href="http://www.jdsanwen.cn" target="_blank">经典散文网</a></dd>
+    <dd><a href="http://www.vistastory.com" target="_blank">Vista看天下</a></dd>
+    <dd><a href="http://www.qnwz.cn" target="_blank">青年文摘</a></dd>
+    <dd><a href="http://www.ledu365.com" target="_blank">乐读网</a></dd>
+    <dd><a href="http://www.pcdigest.com/" target="_blank">计算机文摘</a></dd>
+    <dd><a href="http://www.duzhe.com" target="_blank">读者</a></dd>
+    <dd><a href="http://www.zhsc.net" target="_blank">中华诗词网</a></dd>
+    <dd><a href="http://middtary.china.com/" target="_blank">中华军事</a></dd>
+  </dl>
+  
+  <dl>
+    <dt>flash</dt>
+    <dd><a href="http://bbs.9ria.com/" target="_blank">天地会</a></dd>
+    <dd><a href="http://flex4jiaocheng.com/" target="_blank">flex4教程</a></dd>
+    <dd><a href="http://www.iflex4.com/" target="_blank">flex4官方网站</a></dd>
+    <dd><a href="http://flex.csdn.net/" target="_blank">flex4中文网站</a></dd>
+    
+  </dl>
+  <dl>
+    <dt>html5</dt>
+    <dd><a href="http://www.html5china.com/">html5china</a></dd>
+    <dd><a href="http://www.html5cn.org/">html5中国</a></dd>
+    <dd><a href="http://www.mhtml5.com/">html5研究小组</a></dd>
+    <dd><a href="http://www.html5cn.com.cn/">html5中文学习网</a></dd>
+  </dl>
+  
+  <dl>
+    <dt> Web前端 </dt>
+    <dd><a href=" http://www.16sucai.com/" target="_blank"><span class="red">一流素材网</span></a></dd>
+    <dd><a href="http://html5.validator.nu" target="_blank"><span class="red">html5代码验证</span></a></dd>
+    <dd><a href="http://www.jquerylabs.com/" target="_blank"><span class="red">JQueryLabs</span></a></dd>
+    <dd><a href="http://tympanus.net/codrops/" target="_blank"><span class="red">JQueryTympanus</span></a></dd>
+    <dd><a href="http://www.w3school.com.cn" target="_blank"><span class="red">w3school</span></a></dd>
+    <dd><a href="http://www.houoop.com/" target="_blank">html中文站</a></dd>
+    <dd><a href="http://kb.cnblogs.com/zt/html5/" target="_blank">博客园html5</a></dd>
+    <dd><a href="http://html5gallery.com/" target="_blank">html5画廊</a></dd>
+    <dd><a href="http://html5doctor.com/" target="_blank">html5医生</a></dd>
+    <dd><a href="http://kb.cnblogs.com/zt/jquery/" target="_blank">博客园jQuery</a></dd>
+    <dd><a href="http://lint.brihten.com/html/" target="_blank"><span class="red">html代码验证</span></a></dd>
+    <dd><a href="http://www.alixixi.com/" target="_blank">阿里西西</a></dd>
+    <dd><a href="http://www.div-css.net/div_css/" target="_blank">div-css.net</a></dd>
+    <dd><a href="http://www.hztraining.com/" target="_blank">华章培训</a></dd>
+    <dd><a href="http://www.artlans.com/" target="_blank">artlans</a></dd>
+    <dd><a href="http://css.chinavisual.com/" target="_blank">css酷站</a></dd>
+    <dd><a href="http://haslayout.net/" target="_blank">HasLayOut</a></dd>
+    <dd><a href="http://www.fooldy.cn/?p=2079#more-2079" target="_blank">IEBugTable</a></dd>
+    <dd> <a href="http://www.88web.org/" target="_blank">88WEB</a></dd>
+    <dd><a href="http://www.csrcode.cn/" target="_blank">csrcode</a></dd>
+    <dd><a href="http://www.mycelly.com/" target="_blank"><span class="red">CSS布局</span></a></dd>
+    <dd><a href="http://js.niutuku.com/" target="_blank">牛图库</a></dd>
+    <dd><a href="http://www.chinaui.com/" target="_blank">UI优艾网</a></dd>
+    <dd><a href="http://ucdchina.com/" target="_blank">UCD中国</a></dd>
+    <dd><a href="http://www.webdesignerwall.com/" target="_blank">web设计墙</a></dd>
+    <dd><a href="http://jquerystyle.com/" target="_blank">jquerystyle</a></dd>
+    <dd><a href="http://www.m4go.com/" target="_blank">牧师博客</a></dd>
+    <dd><a href="http://www.kriesi.at/" target="_blank">kriesi</a></dd>
+    <dd><a href="http://www.sohtanaka.com/" target="_blank">sohtanaka</a></dd>
+    <dd><a href="http://www.designbombs.com/" target="_blank">designbombs</a></dd>
+    <dd><a href=" http://www.moonseo.cn/" target="_blank"><span class="red">seo研究中心</span></a></dd>
+    <dd><a href="http://woshao.com/" target="_blank">我烧网</a></dd>
+    <dd><a href="http://www.pjhome.net/default.asp" target="_blank">PJHome</a></dd>
+    <dd><a href="http://www.cainiao8.com/" target="_blank">js菜鸟吧</a></dd>
+    <dd><a href="http://www.mb5u.com/divcssjiaocheng/" target="_blank">Div Css教程</a></dd>
+    <dd><a href="http://www.mb5u.com/" target="_blank">模板无忧</a></dd>
+    <dd><a href="http://www.blueidea.com/index.asp" target="_blank">蓝色理想</a></dd>
+    <dd><a href="http://webshu.net/Index.html" target="_blank">叶子树</a></dd>
+    <dd><a href="http://www.qkankan.com/" target="_blank">国外网站</a></dd>
+    <dd><a href="http://www.k1982.com/" target="_blank">数字驿站</a></dd>
+    <dd><a href="http://ideaman.jimdo.com/" target="_blank">点子之家</a></dd>
+    <dd><a href="http://www.w3school.com.cn/" target="_blank">W3School</a></dd>
+    <dd><a href="http://design.yesky.com/show/" target="_blank">天极作品展示</a></dd>
+    <dd><a href="http://www.52design.com/" target="_blank">创意在线</a></dd>
+    <dd><a href="http://www.highdots.com/" target="_blank">OverZoneSoftware</a></dd>
+    <dd><a href="http://s155.eatj.com/" target="_blank">myhome</a></dd>
+    <dd><a href="http://www.webw3c.org/" target="_blank">w3c</a></dd>
+    <dd><a href="http://www.adobe.com/" target="_blank">ADOBE</a></dd>
+    <dd><a href="http://www.css8.org/" target="_blank">CSS吧</a></dd>
+    <dd><a href="http://www.cnwebshow.com/" target="_blank">中国设计秀</a></dd>
+    <dd><a href="http://web2.sys-con.com/" target="_blank">web2.sys-con</a></dd>
+    <dd><a href="http://www.ijavascript.cn/" target="_blank">JS</a></dd>
+    <dd><a href="http://tinymce.moxiecode.com/index.php" target="_blank">TinyMCE</a></dd>
+    <dd><a href="http://www.w3school.com.cn/js/" target="_blank">W3C_JS</a></dd>
+    <dd><a href="http://www.w3school.com.cn/htmldom/index.asp" target="_blank">HTMLDOM</a></dd>
+    <dd><a href="http://www.scriptlover.com/" target="_blank">ScriptLover</a></dd>
+    <dd><a href="http://www.idcquan.com/" target="_blank">中国IDC圈</a></dd>
+    <dd><a href="http://www.code-123.com/" target="_blank">网页大本营</a></dd>
+    <dd><a href="http://www.68design.net/" target="_blank">网页联盟</a></dd>
+    <dd><a href="http://www.w17x.com/" target="_blank">web一起学</a></dd>
+    <dd><a href="http://www.itokit.com/" target="_blank">web站长站</a></dd>
+    <dd><a href="http://www.web20share.com/" target="_blank">web2.0Share</a></dd>
+    <dd><a href="http://www.csscddp.com/" target="_blank">CSScddp</a></dd>
+    <dd><a href="http://www.web3d.com.cn/" target="_blank">Web3D中文站</a></dd>
+    <dd><a href="http://www.boyoi.cn " target="_blank">博宇科技</a></dd>
+    <dd><a href="http://design.icxo.com/" target="_blank">哈佛设计</a></dd>
+    <dd><a href="http://www.68design.net/" target="_blank">68Design</a></dd>
+    <dd><a href="http://www.bobd.cn/" target="_blank">顶尖设计</a></dd>
+    <dd><a href="http://www.phpchina.com/" target="_blank">PHPChina</a></dd>
+    <dd><a href="http://www.17173.com/" target="_blank">网游第一户</a></dd>
+    <dd><a href="http://www.w3cn.org/" target="_blank">网页设计师</a></dd>
+    <dd><a href="http://www.cssxuexi.com/" target="_blank">CSS学习网</a></dd>
+    <dd><a href="http://www.foreidea.com/" target="_blank">设计前沿</a></dd>
+    <dd><a href="http://www.bbon.cn/" target="_blank">BBON</a></dd>
+    <dd><a href="http://www.cssbasics.com/" target="_blank">cssbasics</a></dd>
+    <dd><a href="http://www.fooldy.cn/" target="_blank">Fooldy</a></dd>
+    <dd><a href="http://www.css88.com/" target="_blank">CSS88</a></dd>
+    <dd><a href="http://www.qianduan.net/" target="_blank">前端观察</a></dd>
+    <dd><a href="http://ued.taobao.com/blog/" target="_blank">淘宝UED</a></dd>
+    <dd><a href="http://www.gaolk.com/" target="_blank">神话设计</a></dd>
+    <dd><a href="http://www.follow5.com/" target="_blank">Follow5</a></dd>
+    <dd><a href="http://soft.zdnet.com.cn/software_zone/book.shtml" target="_blank">边读边看</a></dd>
+    <dd><a href="http://www.divinecss.com/" target="_blank">css Gallery</a></dd>
+    <dd><a href="http://www.songtaste.com/" target="_blank">SongTaste</a></dd>
+    <dd><a href="http://learning.artech.cn/" target="_blank">前沿视频教室</a></dd>
+    <dd><a href="http://leotheme.cn" target="_blank">leotheme</a></dd>
+    <dd><a href="http://www.aptana.org/" target="_blank">Aptana</a></dd>
+    <dd><a href="http://jquery.com/" target="_blank">jQuery官网</a></dd>
+    <dd><a href="http://www.jqueryajax.com/" target="_blank">jQueryAjax</a></dd>
+    <dd><a href="http://www.ajaxrain.com/" target="_blank">AjaxRain</a></dd>
+    <dd><a href="http://bbs.jquery.org.cn" target="_blank">jQuery中文社区</a></dd>
+    <dd><a href="http://www.freeishare.info/" target="_blank">FreeIshare</a></dd>
+    <dd><a href="http://cssglobe.com/" target="_blank">CSSLOBE</a></dd>
+    <dd><a href="http://www.365css.cn/" target="_blank">365css</a></dd>
+    <dd><a href="http://www.css3-html5.com/" target="_blank">CSS3_html5</a></dd>
+    <dd><a href="http://www.poluoluo.com/" target="_blank">破洛洛</a></dd>
+    <dd><a href="http://www.pcyoyo.com/" target="_blank">哟哟IT站</a></dd>
+    <dd><a href="http://www.quwei8.com/" target="_blank">趣味吧</a></dd>
+    <dd><a href="http://www.noupe.com/jquery" target="_blank">NOUPE</a></dd>
+    <dd><a href="http://www.css3.info/" target="_blank">CSS3info</a></dd>
+    <dd><a href="http://www.webdesignfromscratch.com/" target="_blank">webdesign</a></dd>
+    <dd><a href="http://css.maxdesign.com.au/" target="_blank">maxdesign</a></dd>
+    <dd><a href="http://www.addstapart.com/topics/code/css/" target="_blank">addstapart</a></dd>
+    <dd><a href="http://mrthink.net/" target="_blank">Mr.think</a></dd>
+    <dd><a href="http://www.moondyzone.com/" target="_blank">moondyzone</a></dd>
+    <dd><a href="http://blog.ddkejs.com/" target="_blank">ddkeJS</a></dd>
+    <dd><a href="http://leeiio.me/" target="_blank">Leeiio.me</a></dd>
+    <dd><a href="http://styledd.cn/" target="_blank">styledd</a></dd>
+    <dd><a href="http://www.dd86.cn/" target="_blank">dd86</a></dd>
+    <dd><a href="http://www.wowhtml5.com/" target="_blank">wowhtml5</a></dd>
+    <dd><a href="http://www.webdeveloping.cn/blog/" target="_blank">Creay Web</a></dd>
+    <dd><a href="http://www.foxbaty.com/blog/" target="_blank">foxbaty</a></dd>
+    <dd><a href="http://www.tsolong.com/" target="_blank">tsolong</a></dd>
+    <dd><a href="http://www.wxwdesign.cn/" target="_blank">前端开发</a></dd>
+    <dd><a href="http://www.radys.cn/" target="_blank">radys</a></dd>
+    <dd><a href="http://www.html-js.com/" target="_blank">html_js</a></dd>
+    <dd><a href="http://vadddator.w3.org" target="_blank"><span class="red">W3c验证</span></a></dd>
+    <dd><a href="http://www.cncms.com.cn/" target="_blank">WEB开发网</a></dd>
+    <dd><a href="http://www.comsenz.com/index.php" target="_blank">康盛创想</a></dd>
+    <dd><a href="http://www.powereasy.net/" target="_blank">动易网络</a></dd>
+    <dd><a href="http://www.edong.com/" target="_blank">中国E动网</a></dd>
+    <dd><a href="http://down.cnzz.cn/" target="_blank">中国站长</a></dd>
+    <dd><a href="http://down.ddehuo.net/" target="_blank">烈火下载</a></dd>
+    <dd><a href="http://jquery.malsup.com/" target="_blank">jquery插件</a></dd>
+    <dd><a href="http://www.5icool.org/" target="_blank">5icool</a></dd>
+  </dl>
+  <dl>
+    <dt> WEB前端个人博客 </dt>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://www.zhangxinxu.com/" target="_blank">鑫空间</a></dd>
+    <dd><a href="http://css9.net//" target="_blank">css9</a></dd>
+    <dd><a href="http://devwing.com/" target="_blank">开发之翼</a></dd>
+    <dd><a href="http://www.diglog.com/" target="_blank">奇客发现</a></dd>
+    <dd><a href="http://www.weboffer.cn" target="_blank">weboffer</a></dd>
+    <dd><a href="http://varhi.com/" target="_blank">varhi</a></dd>
+    <dd><a href="http://www.planabc.net/" target="_blank">郑怿飞</a></dd>
+    <dd><a href="http://www.cssrain.cn/" target="_blank">CssRain</a></dd>
+    <dd><a href="http://blog.bingo929.com/index.php" target="_blank">彬GO</a></dd>
+    <dd><a href="http://www.cntk.net/" target="_blank">无界设计</a></dd>
+    <dd><a href="http://flymm.com/" target="_blank">飞妹设计</a></dd>
+    <dd><a href="http://www.woaicss.com/" target="_blank">蜗爱CSS</a></dd>
+    <dd><a href="http://www.cssfan.cn/" target="_blank">CSSFan</a></dd>
+    <dd><a href="http://blog.ddnxz.cn/" target="_blank">小志个人博客</a></dd>
+    <dd><a href="http://blog.sjxyz.cn/" target="_blank">落单的孤鸟</a></dd>
+    <dd><a href="http://www.99css.com/" target="_blank">99css</a></dd>
+    <dd><a href="http://www.soberma.com/" target="_blank">soberma</a></dd>
+    <dd><a href="http://www.smbey0nd.com/" target="_blank">smbeyond</a></dd>
+    <dd><a href="http://www.oncoding.cn/" target="_blank">oncoding</a></dd>
+    <dd><a href="http://www.ddhbb.com/" target="_blank">布丁足迹</a></dd>
+    <dd><a href="http://www.yorsun.com/blog/" target="_blank">壹想网</a></dd>
+    <dd><a href="http://www.cndong.cn/" target="_blank">向东而立</a></dd>
+    <dd><a href="http://www.jovey.net/blog/" target="_blank">jovey</a></dd>
+    <dd><a href="http://www.ilovespringna.com/" target="_blank">足迹偏右</a></dd>
+    <dd><a href="http://gandev.com/" target="_blank">gandev</a></dd>
+    <dd><a href="http://www.pufen.net/" target="_blank">pufen</a></dd>
+    <dd><a href="http://pzddng.com/" target="_blank">pzddng</a></dd>
+    <dd><a href="http://www.cn-cuckoo.com/" target="_blank">为之漫笔</a></dd>
+    <dd><a href="http://www.cnblogs.com/wiky/" target="_blank">维奇前端观察</a></dd>
+    <dd><a href="http://www.zishu.cn/" target="_blank">子鼠前端</a></dd>
+    <dd><a href="http://www.playw3c.com/" target="_blank">JASON</a></dd>
+    <dd><a href="http://adamlu.com/" target="_blank">ADAMLU</a></dd>
+    <dd><a href="http://hikejun.com/" target="_blank">hikejun</a></dd>
+    <dd><a href="http://www.adanghome.com/" target="_blank">阿当</a></dd>
+    <dd><a href="http://blog.d8in.com" target="_blank">D8in</a></dd>
+    <dd><a href="http://www.14px.com" target="_blank">14像素</a></dd>
+    <dd><a href="http://rlog.cn/" target="_blank">RLOG</a></dd>
+    <dd><a href="http://www.addtedesign.com/" target="_blank">AddTE</a></dd>
+    <dd><a href="http://www.daqianduan.com/" target="_blank">大前端</a></dd>
+    <dd><a href="http://www.kon-g.com/" target="_blank">空格</a></dd>
+    <dd><a href="http://uicom.net/blog/" target="_blank">白鸽</a></dd>
+    <dd><a href="http://www.uesee.com/" target="_blank">UESEE</a></dd>
+    <dd><a href="http://512show.cn/" target="_blank">水塔实验室</a></dd>
+    <dd><a href="http://stylechen.com/" target="_blank">雨夜带刀</a></dd>
+    <dd><a href="http://jasonsantamaria.com/" target="_blank">jasonsant</a></dd>
+    <dd><a href="http://net.tutsplus.com/" target="_blank">net.tutsplus</a></dd>
+    <dd><a href="http://www.subcide.com/" target="_blank">subcide</a></dd>
+    <dd><a href="http://freecss.info/" target="_blank">freecss</a></dd>
+    <dd><a href="http://www.sohtanaka.com/" target="_blank">sohtanaka</a></dd>
+    <dd><a href="http://www.ndesign-studio.com/" target="_blank">ndesign</a></dd>
+    <dd><a href="http://www.gaolk.com/" target="_blank">神话设计</a></dd>
+    <dd><a href="http://cn.tucia.com/" target="_blank">土司网</a></dd>
+    <dd><a href="http://diggfoto.com" target="_blank">diggfoto</a></dd>
+    <dd><a href="http://www.caihong.cc/" target="_blank">彩虹WEB</a></dd>
+    <dd><a href="http://www.dangbao.net/" target="_blank">党宝BLOG</a></dd>
+  </dl>
+  <dl>
+    <dt> 互联网公司UED博客 </dt>
+    <dd><a href="http://isd.tencent.com/" target="_blank">腾讯ISD</a></dd>
+    <dd><a href="http://wsd.tencent.com/" target="_blank">腾讯WSD</a></dd>
+    <dd><a href="http://cdc.tencent.com/" target="_blank">腾讯CDC</a></dd>
+    <dd><a href="http://ued.sohu.com/" target="_blank">搜狐UED</a></dd>
+    <dd><a href="http://blog.19ued.com/" target="_blank">19楼UED</a></dd>
+    <dd><a href="http://www.the9ued.com/" target="_blank">第九城市</a></dd>
+    <dd><a href="http://www.baiduux.com/" target="_blank">百度泛</a></dd>
+    <dd><a href="http://uedc.163.com/" target="_blank">网易UED</a></dd>
+    <dd><a href="http://ued.5173.com/" target="_blank">5173UED</a></dd>
+    <dd><a href="http://www.addued.cn/" target="_blank">阿里巴巴</a></dd>
+    <dd><a href="http://ued.taobao.com/blog/" target="_blank">淘宝UED</a></dd>
+    <dd><a href="http://ued.koubei.com/" target="_blank">口碑网 UED</a></dd>
+    <dd><a href="http://ued.addpay.com/" target="_blank">51CTO</a></dd>
+    <dd><a href="http://blog.addpay.com/" target="_blank">支付宝</a></dd>
+    <dd><a href="http://ued.addmama.com/" target="_blank">阿里妈妈</a></dd>
+    <dd><a href="http://ued.ctrip.com/blog/" target="_blank">携程UED菁华</a></dd>
+    <dd><a href="http://www.sndaued.com/blog/" target="_blank">盛大UED</a></dd>
+    <dd><a href="http://fed.renren.com/" target="_blank">人人网FED</a></dd>
+    <dd><a href="http://ucd.blog.163.com/" target="_blank">网易杭州UCD</a></dd>
+    <dd><a href="http://blog.sina.com.cn/cnsns" target="_blank">新浪sns</a></dd>
+    <dd><a href="http://blog.51cto.com/" target="_blank">51CTO</a></dd>
+  </dl>
+  <dl>
+    <dt> 博客网 </dt>
+    <dd><a href="http://www.douban.com/" target="_blank">豆瓣网</a></dd>
+    <dd><a href="http://www.uvan.com/" target="_blank">游玩网</a></dd>
+    <dd><a href="http://www.mop.com/" target="_blank">猫扑网</a></dd>
+    <dd><a href="http://www.duolequ.cn/" target="_blank">多乐趣</a></dd>
+    <dd><a href="http://jiepang.com/" target="_blank">街旁</a></dd>
+    <dd><a href="http://wwere.l99.com/" target="_blank">在哪</a></dd>
+    <dd><a href="http://sifang.com/" target="_blank">玩转四方</a></dd>
+    <dd><a href="http://t.sdo.com/" target="_blank">盛大糖果</a></dd>
+    <dd><a href="http://blog.chinaunix.net/" target="_blank">ChinaUnix</a></dd>
+    <dd><a href="http://blog.sohu.com/" target="_blank">sohu</a></dd>
+    <dd><a href="http://www.pinpin.me/" target="_blank">品品米</a></dd>
+    <dd><a href="http://blog.ccidnet.com/" target="_blank">ccidnet</a></dd>
+    <dd><a href="http://www.80party.cn/" target="_blank">80后社</a></dd>
+    <dd><a href="http://www.lost63.com/" target="_blank">迷失63</a></dd>
+    <dd><a href="http://www.nextcool.cn/" target="_blank">网络杂货铺</a></dd>
+    <dd><a href="http://www.tianya.cn/" target="_blank">天涯社区</a></dd>
+    <dd><a href="http://club.msn.cn/" target="_blank">微博巨酷</a></dd>
+    <dd><a href="http://www.yek7.com/" target="_blank">同城交友网</a></dd>
+    <dd><a href="http://blog.joycode.com/" target="_blank">博客堂</a></dd>
+    <dd><a href="http://t.sina.com.cn/wkyddn" target="_blank">新浪微博</a></dd>
+    <dd><a href="http://www.renren.com" target="_blank">人人网</a></dd>
+    <dd><a href="http://www.kaixin001.com/" target="_blank">开心网</a></dd>
+    <dd><a href="http://www.yiqi.com/plaza/index.php" target="_blank">一起</a></dd>
+    <dd><a href="http://www.hainei8.com/" target="_blank">海内</a></dd>
+    <dd><a href="http://www.myspace.cn/" target="_blank">聚友网</a></dd>
+    <dd><a href="http://facebook.bwidc.cn/" target="_blank">facebook中国</a></dd>
+    <dd><a href="http://tongxue.com/" target="_blank">同学网</a></dd>
+    <dd><a href="http://www.zhanzuo.com/" target="_blank">占座网</a></dd>
+    <dd><a href="http://www.51.com/" target="_blank">51朋友</a></dd>
+    <dd><a href="http://www.5gme.com/" target="_blank">51朋友</a></dd>
+    <dd><a href="http://swisen.com/" target="_blank">随心微博</a></dd>
+    <dd><a href="http://www.sdo.com/" target="_blank">盛大在线</a></dd>
+    <dd><a href="http://www.weaddnk.com" target="_blank">若邻网</a></dd>
+    <dd><a href="http://jandan.net/" target="_blank">煎蛋网</a></dd>
+    <dd><a href="http://www.yandui.com/" target="_blank">言兑网</a></dd>
+    <dd><a href="http://www.ddageren.com/" target="_blank">俩个人</a></dd>
+    <dd><a href="http://www.25shots.com" target="_blank">25shots</a></dd>
+    <dd><a href="http://lengxiaohua.net/" target="_blank">冷笑话吧</a></dd>
+    <dd><a href="http://www.duomoo.com/" target="_blank">网事多磨网</a></dd>
+    <dd><a href="http://t.goojje.net/" target="_blank">谷姐微博</a></dd>
+    <dd><a href="http://www.wuddaoo.com/" target="_blank">无聊哦</a></dd>
+    <dd><a href="http://lunyog.hw108.cn/" target="_blank">流言非语</a></dd>
+    <dd><a href="http://www.qiushibaike.com/" target="_blank">糗事百科</a></dd>
+    <dd><a href="http://www.zhuaxia.com" target="_blank">抓虾</a></dd>
+    <dd><a href="http://xianguo.com/" target="_blank">鲜果</a></dd>
+    <dd><a href="http://kisshi.com/" target="_blank">河蟹娱乐</a></dd>
+    <dd><a href="http://zuosa.com" target="_blank">坐啥网</a></dd>
+    <dd><a href="http://xiezhua.com" target="_blank">蟹爪网</a></dd>
+    <dd><a href="http://www.qikoo.com/" target="_blank">奇酷网</a></dd>
+    <dd><a href="http://tui.qihoo.com/following" target="_blank">口袋推</a></dd>
+  </dl>
+  <dl>
+    <dt> 平面设计 </dt>
+    <dd><a href=" http://uuhy.com/" target="_blank">创意家园</a></dd>
+    <dd><a href="http://www.865171.cn/" target="_blank">模板网</a></dd>
+    <dd><a href="http://www.sccnn.com/" target="_blank">素材中国</a></dd>
+    <dd><a href="http://www.vision1.cn/index.html" target="_blank">第一视觉</a></dd>
+    <dd><a href="http://www.vision1.cn/index.html" target="_blank">第一视觉</a></dd>
+    <dd><a href="http://www.vision1.cn/index.html" target="_blank">第一视觉</a></dd>
+    <dd><a href="http://www.osstyle.cn/" target="_blank">发现酷站</a></dd>
+    <dd><a href="http://www.visionunion.com/" target="_blank">视觉同盟</a></dd>
+    <dd><a href="http://www.okvi.com/" target="_blank">视觉联盟</a></dd>
+    <dd><a href="http://www.vision1.cn/index.html" target="_blank">第一视觉</a></dd>
+    <dd><a href="http://www.zcool.com.cn/" target="_blank">Z酷</a></dd>
+    <dd><a href="http://www.chinavisual.com/" target="_blank">视觉中国</a></dd>
+    <dd><a href="http://99ut.blueidea.com/" target="_blank">大师之路</a></dd>
+    <dd><a href="http://www.pser-zone.com/index.asp" target="_blank">PS教程站</a></dd>
+    <dd><a href="http://www.68ps.com/" target="_blank">PS联盟</a></dd>
+    <dd><a href="http://www.freevy.cn/" target="_blank">非凡站长资讯</a></dd>
+    <dd><a href="http://www.id666.com/" target="_blank">爱迪网络</a></dd>
+    <dd><a href="http://www.333cn.com/index.html" target="_blank">中国设计之窗</a></dd>
+    <dd><a href="http://www.jcwcn.com/" target="_blank">中国教程网</a></dd>
+    <dd><a href="http://www.it55.com/" target="_blank">IT设计之家</a></dd>
+    <dd><a href="http://www.web162.com/" target="_blank">站长助手</a></dd>
+    <dd><a href="http://www.bbscode.com/" target="_blank">BBS论坛</a></dd>
+    <dd><a href="http://www.php100.com/" target="_blank">PHP100</a></dd>
+    <dd><a href="http://www.sj33.cn" target="_blank">设计之家</a></dd>
+    <dd><a href="http://www.iconfans.com" target="_blank">图标制作</a></dd>
+    <dd><a href="http://www.kkdesk.com" target="_blank">桌面壁纸</a></dd>
+    <dd><a href="http://www.3ddan.com" target="_blank">连素材</a></dd>
+    <dd><a href="http://www.apoints.com " target="_blank">圆点视线</a></dd>
+    <dd><a href="http://www.webshu.net" target="_blank">免费素材</a></dd>
+    <dd><a href="http://www.visionunion" target="_blank">设计类网站</a></dd>
+    <dd><a href="http://www.ppdesk.com " target="_blank">桌面壁纸</a></dd>
+    <dd><a href="http://desk.zol.com.cn" target="_blank">中关村壁纸</a></dd>
+    <dd><a href="http://www.deskcity.com" target="_blank">桌面城市</a></dd>
+    <dd><a href="http://www.veeqi.com" target="_blank">维奇素材网</a></dd>
+    <dd><a href="http://findicons.com/" target="_blank">最佳图标</a></dd>
+    <dd><a href="http://www.okajax.com/" target="_blank">AJAX中国</a></dd>
+    <dd><a href="http://www.oddhe.com/" target="_blank">活力盒子</a></dd>
+    <dd><a href="http://psd.tutsplus.com/" target="_blank">psd.tutsplus</a></dd>
+    <dd><a href="http://www.iconbuffet.com/" target="_blank">ico图标</a></dd>
+    <dd><a href="http://www.topit.me" target="_blank">topit.me</a></dd>
+    <dd><a href="http://www.xiankankan.com/" target="_blank">先看看</a></dd>
+    <dd><a href="http://www.deskcity.com/" target="_blank">桌面城市</a></dd>
+    <dd><a href="http://sudasuta.com" target="_blank">苏打苏塔</a></dd>
+    <dd><a href="http://www.chinaz.com/" target="_blank">站长之家</a></dd>
+    <dd><a href="http://paranimage.com" target="_blank">帕兰映像</a></dd>
+    <dd><a href=" http://www.iconfinder.com/" target="_blank">icon图标</a></dd>
+  </dl>
+  <dl>
+    <dt> 国外css网站 </dt>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://www.cssmoon.com/" target="_blank">cssmoon</a></dd>
+    <dd><a href="http://www.cssem.com/" target="_blank">cssem</a></dd>
+    <dd><a href="http://www.designersource.net/" target="_blank">designersource</a></dd>
+    <dd><a href="http://www.urbantrash.net/cssgallery/" target="_blank">urbantrash</a></dd>
+    <dd><a href="http://cssband.com/" target="_blank">cssband</a></dd>
+    <dd><a href="http://www.csszone.org/" target="_blank">csszone</a></dd>
+    <dd><a href="http://www.cssdaddy.com/" target="_blank">cssdaddy</a></dd>
+    <dd><a href="http://www.cssimpress.com/" target="_blank">cssimpress</a></dd>
+    <dd><a href="http://www.cssleak.com/" target="_blank">cssleak</a></dd>
+    <dd><a href="http://www.cssburst.com/" target="_blank">cssburst</a></dd>
+    <dd><a href="http://screenfluent.com/" target="_blank">screenfluent</a></dd>
+    <dd><a href="http://www.my3w.org/" target="_blank">my3w</a></dd>
+    <dd><a href="http://www.css20.com/" target="_blank">css20</a></dd>
+    <dd><a href="http://designsnack.com/" target="_blank">designsnack</a></dd>
+    <dd><a href="http://csscollection.com/" target="_blank">csscollection</a></dd>
+    <dd><a href="http://www.cssstar.com/" target="_blank">cssstar</a></dd>
+    <dd><a href="http://www.professionalontheweb.com/" target="_blank">professionalontheweb</a></dd>
+    <dd><a href="http://www.cssreboot.com/" target="_blank">cssreboot</a></dd>
+    <dd><a href="http://www.website-gallery.com/" target="_blank">website-gallery</a></dd>
+    <dd><a href="http://www.cssglance.com/" target="_blank">cssglance</a></dd>
+    <dd><a href="http://www.cssclip.com/" target="_blank">cssclip</a></dd>
+    <dd><a href="http://www.webdigity.com/cssgallery/" target="_blank">webdigity</a></dd>
+    <dd><a href="http://styleboost.com/" target="_blank">styleboost</a></dd>
+    <dd><a href="http://cssbased.com/" target="_blank">cssbased</a></dd>
+    <dd><a href="http://www.screenalicious.com/" target="_blank">screenalicious</a></dd>
+    <dd><a href="http://screenfluent.com/" target="_blank">screenfluent</a></dd>
+    <dd><a href="http://www.thebestdesigns.com/" target="_blank">thebestdesigns</a></dd>
+    <dd><a href="http://www.csselite.com/" target="_blank">csselite</a></dd>
+    <dd><a href="http://www.coolhomepages.com/" target="_blank">coolhomepages</a></dd>
+    <dd><a href="http://bestwebgallery.com/" target="_blank">bestwebgallery</a></dd>
+    <dd><a href="http://softfacade.com/index.html" target="_blank">softfacade</a></dd>
+    <dd><a href="http://www.1stwebdesigner.com" target="_blank">1stwebdesigner</a></dd>
+    <dd><a href="http://www.w3theme.com/" target="_blank">w3hteme</a></dd>
+    <dd><a href="http://clagnut.com/" target="_blank">clagnut</a></dd>
+    <dd><a href="http://www.fox.com/fringe/" target="_blank">Fox_fringe</a></dd>
+    <dd><a href="http://www.apple.com/html5/" target="_blank">appleHtml5</a></dd>
+    <dd><a href="http://www.jscss8.com/" target="_blank">Jscss8</a></dd>
+    <dd><a href="http://html51.com/" target="_blank">HTML51</a></dd>
+    <dd><a href="http://www.cssdesk.com/" target="_blank">cssDesk</a></dd>
+    <dd><a href="http://www.ala.org/" target="_blank">ALA</a></dd>
+    <dd><a href="http://scriptsrc.net" target="_blank">ScriptSrc</a></dd>
+    <dd><a href="http://veerle-v2.duoh.com/" target="_blank">veerle</a></dd>
+    <dd><a href="http://fortysevenmedia.com/" target="_blank">47Media</a></dd>
+    <dd><a href="http://www.css3.com/" target="_blank">CSS3</a></dd>
+    <dd><a href="http://www.fox.com/fringe/" target="_blank">Fox_fringe</a></dd>
+    <dd><a href="http://cssmania.com/" target="_blank">cssmania</a> </dd>
+    <dd><a href="http://moronicbajebus.com/" target="_blank">moronicbajebus</a> </dd>
+    <dd><a href="http://westciv.com/" target="_blank">westciv</a> </dd>
+    <dd><a href="http://9rules.com/" target="_blank">9rules</a> </dd>
+    <dd><a href="http://www.maxdesign.com.au/" target="_blank">maxdesign</a> </dd>
+    <dd><a href="http://www.tristarwebdesign.co.uk/" target="_blank">tristarwebdesign</a> </dd>
+    <dd><a href="http://www.sixshootermedia.com/" target="_blank">sixshootermedia</a> </dd>
+    <dd><a href="http://www.smashingmagazine.com/" target="_blank">smashingmagazine</a> </dd>
+    <dd><a href="http://www.webcss.cn" target="_blank">webcss</a> </dd>
+    <dd><a href="http://creattica.com/" target="_blank">creattica</a> </dd>
+    <dd><a href="http://www.ericmmartin.com" target="_blank">ericmmartin</a> </dd>
+    <dd><a href="http://footerfetish.com/" target="_blank">footerfetish</a> </dd>
+    <dd><a href="http://960.gs/" target="_blank">960网络系统</a> </dd>
+    <dd><a href="http://www.webcss.cn/" target="_blank">WEBCSS</a> </dd>
+    <dd><a href="http://web.top.org/css/" target="_blank">CSS网站排名</a> </dd>
+    <dd><a href="http://www.cssplay.co.uk/" target="_blank">cssplay</a> </dd>
+    <dd><a href="http://www.cssmania.com/" target="_blank">Cssmania</a> </dd>
+    <dd><a href="http://www.freecsstemplates.org/" target="_blank">FreeCss</a></dd>
+    <dd><a href="http://www.gaolk.com/" target="_blank">神话设计</a></dd>
+    <dd><a href="http://www.dreamtemplate.com/" target="_blank">dreamtemplate</a></dd>
+    <dd><a href="http://www.cssheaven.com/" target="_blank">cssheaven</a></dd>
+    <dd><a href="http://www.cssdrive.com/" target="_blank">cssdrive</a></dd>
+    <dd><a href="http://www.cssartillery.com/" target="_blank">cssartillery</a></dd>
+    <dd><a href="http://www.cssbeauty.com/" target="_blank">cssbeauty</a></dd>
+    <dd><a href="http://webdesignledger.com/" target="_blank">webdesignledger</a></dd>
+    <dd><a href="http://www.edustyle.net/" target="_blank">edustyle</a></dd>
+    <dd><a href="http://www.smashingmagazine.com/tag/css/" target="_blank">smashingmagazine</a></dd>
+    <dd><a href="http://k10k.net/" target="_blank">k10k</a></dd>
+    <dd><a href="http://cubancouncil.com/" target="_blank">cubancouncil</a></dd>
+    <dd><a href="http://cssrockstars.com/" target="_blank">cssrockstars</a></dd>
+    <dd><a href="http://articles.sitepoint.com/" target="_blank">sitepoint</a></dd>
+    <dd><a href="http://www.addstapart.com/topics/code/css/" target="_blank">addstapart</a></dd>
+    <dd><a href="http://www.friendsofed.co" target="_blank">friendsofed</a></dd>
+    <dd><a href="http://www.positioniseverything.net/" target="_blank">ppthing</a></dd>
+    <dd><a href="http://cssdog.com/index.html" target="_blank">cssdog</a></dd>
+    <dd><a href="http://www.456bereastreet.com/archive/categories/css/" target="_blank">456bereastreet</a></dd>
+    <dd><a href="http://webdesignfromscratch.com/articles-and-tutorials/" target="_blank">webdesignfrom</a></dd>
+    <dd><a href="http://css.maxdesign.com.au/" target="_blank">maxdesign</a></dd>
+    <dd><a href="http://www.andybudd.com/ddnks/cssweb_standards/index.php" target="_blank">andybudd</a></dd>
+    <dd><a href="http://css-tricks.com/" target="_blank">css_tricks</a></dd>
+    <dd><a href="http://www.deddcious.com/tag/css" target="_blank">deddcious</a></dd>
+    <dd><a href="http://www.csseasy.com/" target="_blank">csseasy</a></dd>
+  </dl>
+  <dl>
+    <dt> 英语学习网 </dt>
+    <dd><a href="http://dict.cn/" target="_blank">海词网</a></dd>
+    <dd><a href="http://engkoo.com/" target="_blank">英酷英语</a></dd>
+    <dd><a href="http://www.iciba.com/" target="_blank">爱词霸</a></dd>
+    <dd><a href="http://www.chinaengddsh.com.cn/" target="_blank">中国英语网</a></dd>
+    <dd><a href="http://www.es123.com/" target="_blank">英语沙龙</a></dd>
+    <dd><a href="http://bbs.24en.com/" target="_blank">英语学习论坛</a></dd>
+    <dd><a href="http://www.speak2me.cn/" target="_blank">Speak2Me</a></dd>
+    <dd><a href="http://edu.taisha.org" target="_blank">太傻论坛</a></dd>
+    <dd><a href="www.icoolen.com" target="_blank">icoolen</a></dd>
+    <dd><a href="http://www.ddsteningexpress.com/" target="_blank">听力特快</a></dd>
+    <dd><a href="http://www.hjengddsh.com/" target="_blank">沪江网</a></dd>
+    <dd><a href="http://www.wwengddsh.com/" target="_blank">旺旺英语</a></dd>
+    <dd><a href="http://www.51test.net/" target="_blank">无忧考网</a></dd>
+    <dd><a href="http://gb.cri.cn/" target="_blank">Cri</a></dd>
+    <dd><a href="http://www.nciku.com/" target="_blank">n词酷</a></dd>
+    <dd><a href="http://translate.google.cn/" target="_blank">谷歌翻译</a></dd>
+    <dd><a href="http://dict.baidu.com/" target="_blank">百度词典</a></dd>
+    <dd><a href="http://dict.youdao.com/" target="_blank">有道词典</a></dd>
+  </dl>
+  <dl>
+    <dt> 网上商城 </dt>
+    <dd><a href="http://www.yoka.com/" target="_blank">雅客网</a></dd>
+    <dd><a href="http://www.w1.cn/" target="_blank">唯伊网</a></dd>
+    <dd><a href="http://www.ledaojia.com/" target="_blank">乐到家</a></dd>
+    <dd><a href="http://www.myrice.com/" target="_blank">多来米</a></dd>
+    <dd><a href="http://www.newegg.com.cn/" target="_blank">新蛋网</a></dd>
+    <dd><a href="http://www.dangdang.com/" target="_blank">当当网</a></dd>
+    <dd><a href="http://www.taobao.com/index_n.php" target="_blank">淘宝网</a></dd>
+    <dd><a href="http://china.addbaba.com/" target="_blank">阿里巴巴</a></dd>
+    <dd><a href="http://www.amazon.cn/" target="_blank">卓越亚马逊</a></dd>
+    <dd><a href="http://www.1-book.cn/" target="_blank">上海第一书城</a></dd>
+    <dd><a href="http://www.china-pub.com/" target="_blank">互动出版网</a></dd>
+    <dd><a href="http://www.digpark.com/" target="_blank">第八乐团</a></dd>
+    <dd><a href="http://www.mrprint.cn/" target="_blank">超印速</a></dd>
+    <dd><a href="http://www.inker.com.cn/" target="_blank">印客网</a></dd>
+    <dd><a href="http://www.51eshu.net/" target="_blank">无忧E书网</a></dd>
+    <dd><a href="http://www.bookschina.com" target="_blank">中国图书网</a></dd>
+    <dd><a href="http://www.8211.cn/" target="_blank">书客网</a></dd>
+    <dd><a href="http://www.paipai.com/" target="_blank">拍拍网</a></dd>
+    <dd><a href="http://www.eachnet.com/" target="_blank">易趣网</a></dd>
+    <dd><a href="http://www.360buy.com/" target="_blank">360buy</a></dd>
+    <dd><a href="http://www.vancl.com/" target="_blank">凡客诚品</a></dd>
+    <dd><a href="http://www.redbaby.com.cn/" target="_blank">红孩子</a></dd>
+    <dd><a href="http://www.lashou.com/" target="_blank">拉手网</a></dd>
+    <dd><a href="http://www.kadang.com/" target="_blank">卡当网</a></dd>
+    <dd><a href="http://shanghai.aibang.com/" target="_blank">爱帮网</a></dd>
+    <dd><a href="http://hoto.cn/" target="_blank">好豆网</a></dd>
+    <dd><a href="http://www.zonezu.com/" target="_blank">账友网</a></dd>
+    <dd><a href="http://masamaso.com/index.shtml" target="_blank">玛萨玛索</a></dd>
+    <dd><a href="http://www.001town.com/bookmall/index.html" target="_blank">1城网</a></dd>
+    <dd><a href="http://www.girlscountry.com/" target="_blank">女儿国时尚</a></dd>
+    <dd><a href=" http://shanghai.aibang.com/" target="_blank">爱帮网</a></dd>
+    <dd><a href="http://www.meituan.com" target="_blank">美团网</a></dd>
+    <dd><a href="http://www.tuangoba.com" target="_blank">团购吧</a></dd>
+    <dd><a href="http://www.teambuy.com.cn/cindex.php" target="_blank">团购在线</a></dd>
+    <dd><a href="http://24quan.com/" target="_blank">24券</a></dd>
+    <dd><a href="http://wuhan.wotuan.com/" target="_blank">我团网</a></dd>
+    <dd><a href="http://www.nuomi.com/" target="_blank">糯米网</a></dd>
+    <dd><a href="http://www.miwho.com/" target="_blank">米糊网</a></dd>
+    <dd><a href="http://www.juandou.com/" target="_blank">卷豆网</a></dd>
+    <dd><a href="http://www.52cons.cn/" target="_blank">匡威论坛</a></dd>
+    <dd><a href="http://www.zhongguohuo.com/" target="_blank">琳琅国货</a></dd>
+    <dd><a href="http://bai.sohu.com/" target="_blank">白社会</a></dd>
+    <dd><a href="http://mituan.com/" target="_blank">米团网</a></dd>
+    <dd><a href="http://www.leleju.com/" target="_blank">乐乐居</a></dd>
+    <dd><a href="http://www.525j.com.cn/" target="_blank">我爱我家</a></dd>
+    <dd><a href="http://www.togj.com/" target="_blank">逛街网</a></dd>
+    <dd><a href="http://www.qianxun.com/main.action" target="_blank">千寻网</a></dd>
+    <dd><a href="http://www.wooha.com/" target="_blank">呼哈网</a></dd>
+    <dd><a href="http://www.yifu.com/default.aspx" target="_blank">衣服网</a></dd>
+    <dd><a href="http://www.vipshop.com/" target="_blank">唯品网</a></dd>
+    <dd><a href="http://www.shishangqiyi.com" target="_blank">时尚起义</a></dd>
+    <dd><a href="http://www.letao.com/" target="_blank">乐淘鞋</a></dd>
+    <dd><a href="http://www.goshishang.com/" target="_blank">快乐购时尚</a></dd>
+    <dd><a href="http://www.m18.com/" target="_blank">麦考林</a></dd>
+    <dd><a href="http://www.haishang.com/" target="_blank">海上</a></dd>
+    <dd><a href="http://www.dapeiwang.com/" target="_blank">搭配网</a></dd>
+    <dd><a href="http://www.pkpop.com/" target="_blank">普及网</a></dd>
+    <dd><a href="http://2miban.com/" target="_blank">两米半</a></dd>
+    <dd><a href="http://maiyaa.com/" target="_blank">麦芽网</a></dd>
+  </dl>
+  <dl>
+    <dt> 视频音乐 </dt>
+    <dd><a href="http://www.jamguo.com/" target="_blank">坚果音乐</a></dd>
+    <dd><a href="http://www.imusic.cn/" target="_blank">IMusic.cn</a></dd>
+    <dd><a href="http://v.iciba.com/" target="_blank">词霸电影</a></dd>
+    <dd><a href="http://www.mv001.com/" target="_blank">MV001</a></dd>
+    <dd><a href="http://www.youku.com/" target="_blank">优酷视频</a></dd>
+    <dd><a href="http://www.tudou.com/" target="_blank">土豆网</a></dd>
+    <dd><a href="http://www.ku6.com/" target="_blank">酷六视频</a></dd>
+    <dd><a href="http://www.joy.cn/" target="_blank">激动网</a></dd>
+    <dd><a href="http://bbs.uubird.com/" target="_blank">UU鸟</a></dd>
+    <dd><a href="http://www.dygod.com/" target="_blank">电影天堂</a></dd>
+    <dd><a href="http://www.fgdown.com/" target="_blank">疯狗资源联盟</a></dd>
+    <dd><a href="http://bbs.wofei.net/" target="_blank">飞鸟娱乐</a></dd>
+    <dd><a href="http://www.onefy.net/" target="_blank">3G娱乐</a></dd>
+    <dd><a href="http://www.yyets.net/index.php" target="_blank">人人影视</a></dd>
+    <dd><a href="http://www.75911.com/" target="_blank">75911</a></dd>
+    <dd><a href="http://www.yinyuetai.com/" target="_blank">音乐台</a></dd>
+    <dd><a href="http://www.1g1g.com/" target="_blank">亦歌音乐</a></dd>
+    <dd><a href="http://www.see2say.com/" target="_blank">Say2See</a></dd>
+    <dd><a href="http://www.kumule.com/" target="_blank">酷驴音乐网</a></dd>
+    <dd><a href="http://www.flamesky.com/copindex.html" target="_blank">雅然音乐网</a></dd>
+    <dd><a href="http://www.bbvod.net/index.html" target="_blank">九州梦网</a></dd>
+    <dd><a href="http://www.xunlei.com/" target="_blank">迅雷看看</a></dd>
+    <dd><a href="http://www.haoting.com/" target="_blank">好听</a></dd>
+    <dd><a href="http://www.9sky.com/" target="_blank">九天</a></dd>
+    <dd><a href="http://www.qiyi.com/" target="_blank">奇艺</a></dd>
+    <dd><a href="http://www.yupoo.com/" target="_blank">又拍网</a></dd>
+    <dd><a href="http://www.duowan.com/" target="_blank">多玩网</a></dd>
+    <dd><a href="http://www.moko.cc/" target="_blank">美空网</a></dd>
+    <dd><a href="http://www.sayddkes.com/" target="_blank">sayddkes</a></dd>
+    <dd><a href="http://www.songtaste.com/" target="_blank">SongTaste</a></dd>
+  </dl>
+  <dl>
+    <dt> 软件下载 </dt>
+    <dd><a href="http://www.iplaysoft.com/" target="_blank">异次元下载</a></dd>
+    <dd><a href="http://www.newhua.com/index.htm" target="_blank">华军软件园</a></dd>
+    <dd><a href="http://dl.pconddne.com.cn/" target="_blank">太平洋下载</a></dd>
+    <dd><a href="http://www.mydown.com/" target="_blank">天极下载</a></dd>
+    <dd><a href="http://xiazai.zol.com.cn/" target="_blank">霏凡下载</a></dd>
+    <dd><a href="http://www.21tx.com/" target="_blank">天新网</a></dd>
+    <dd><a href="http://ebook.pc120.net.cn/Index.html" target="_blank">DIY梦工厂</a></dd>
+    <dd><a href="http://www.hackbase.com/" target="_blank">黑客基地</a></dd>
+    <dd><a href="http://www.90xt.cn/" target="_blank">重做系统网</a></dd>
+    <dd><a href="http://www.zol.com.cn/" target="_blank">中关村在线</a></dd>
+    <dd><a href="http://www.bitscn.com/" target="_blank">中国网管联盟</a></dd>
+    <dd><a href="http://www.fuancn.cn/" target="_blank">服安资讯</a></dd>
+    <dd><a href="http://www.oray.cn/" target="_blank">花生壳</a></dd>
+    <dd><a href="http://www.bestrj.com/" target="_blank">最好软件园</a></dd>
+    <dd><a href="http://www.xtzj.com/" target="_blank">系统之家</a></dd>
+    <dd><a href="http://www.duote.com/" target="_blank">多特软件站</a></dd>
+    <dd><a href="http://www.cioage.com/" target="_blank">CIOAge</a></dd>
+    <dd><a href="http://www.xici.net/" target="_blank">西祠胡同</a></dd>
+    <dd><a href="http://www.chdown.com/" target="_blank">彩虹软件站</a></dd>
+    <dd><a href="http://www.updrv.com/" target="_blank">驱动人生</a></dd>
+    <dd><a href="http://www.xiazaiba.com/" target="_blank">下载吧</a></dd>
+    <dd><a href="http://www.rar1.com.cn/" target="_blank">RAR1下载</a></dd>
+    <dd><a href="http://www.pcwaishe.cn/" target="_blank">电脑外设</a></dd>
+    <dd><a href="http://www.duowu.com/" target="_blank">多屋下载</a></dd>
+    <dd><a href="http://down.kafan.cn/" target="_blank">卡饭下载</a></dd>
+    <dd><a href="http://www.greendown.cn" target="_blank">绿色下载</a></dd>
+    <dd><a href="http://www.cxcs.com.cn/" target="_blank">程序员超市</a></dd>
+    <dd><a href="http://www.myfiles.com.cn" target="_blank">软件之家</a></dd>
+    <dd><a href="http://www.d9soft.com/" target="_blank">第九软件网</a></dd>
+    <dd><a href="http://www.91soft.com/" target="_blank">就要软件站</a></dd>
+    <dd><a href="http://ddvip.com/" target="_blank">豆豆软件</a></dd>
+    <dd><a href="http://www.downbank.cn/" target="_blank">下载银行</a></dd>
+    <dd><a href="http://www.ankty.com/" target="_blank">统一下载</a></dd>
+    <dd><a href="http://www.05sun.com/" target="_blank">零度软件园</a></dd>
+  </dl>
+  
+  <dl>
+    <dt> Linux </dt>
+    <dd><a href="http://www.ddnuxidc.com/index.htm" target="_blank">Linux公社</a></dd>
+    <dd><a href="http://www.ddnux-cn.com/" target="_blank">Linux中国</a></dd>
+    <dd><a href="http://www.cmd5.com/" target="_blank">MD5密码破解</a></dd>
+    <dd><a href="http://www.medusa1375.cn/" target="_blank">美杜杉</a></dd>
+    <dd><a href="http://www.vmware.com/cn/" target="_blank">威睿VMware</a></dd>
+  </dl>
+  <dl>
+    <dt> 游戏咨询 </dt>
+    <dd><a href="http://www.17173.com/" target="_blank">17173</a></dd>
+    <dd><a href="http://www.07073.com/" target="_blank">07073</a></dd>
+    <dd><a href="http://www.51wan.com/" target="_blank">太平洋游戏网</a></dd>
+    <dd><a href="http://www.duowan.com/" target="_blank">多玩</a></dd>
+    <dd><a href="http://www.yzz.cn/" target="_blank">叶子猪</a></dd>
+    <dd><a href="http://www.265g.com/" target="_blank">265G</a></dd>
+    <dd><a href="http://www.969g.com/" target="_blank">969G</a></dd>
+    <dd><a href="http://www.2366.com/" target="_blank">2366</a></dd>
+    <dd><a href="http://web.52pk.com/" target="_blank">52pk</a></dd>
+    <dd><a href="http://www.51netu.com/" target="_blank">耐游网</a></dd>
+    <dd><a href="http://www.6dan.com/" target="_blank">六担网</a></dd>
+    <dd><a href="http://web.sgamer.com/" target="_blank">超级玩家</a></dd>
+    <dd><a href="http://webgame.reyoo.net/" target="_blank">热游网</a></dd>
+    <dd><a href="http://web.ali213.net/" target="_blank">游侠网</a></dd>
+  </dl>
+  <dl>
+    <dt>理财中国</dt>
+    <dd><a href="http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml" target="_blank">综合指数</a></dd>
+    <dd><a href="http://finance.sina.com.cn/fund/index.shtml" target="_blank">新浪基金</a></dd>
+    <dd><a href="http://money.business.sohu.com/jijin.shtml" target="_blank">搜狐基金</a></dd>
+    <dd><a href="http://www.jrj.com/" target="_blank">金融界</a></dd>
+    <dd><a href="http://www.hexun.com/" target="_blank">和讯</a></dd>
+    <dd><a href="http://www.ourku.com/" target="_blank">酷基金</a></dd>
+    <dd><a href="http://www.cnfund.cn/" target="_blank">中国基金网</a></dd>
+    <dd><a href="http://www.jjmmw.com/" target="_blank">基金买卖网</a></dd>
+    <dd><a href="http://www.51fund.com/" target="_blank">上投</a></dd>
+    <dd><a href="http://www.phfund.com.cn" target="_blank">鹏华</a></dd>
+    <dd><a href="http://www.boshi.com.cn/" target="_blank">博时</a></dd>
+    <dd><a href="http://www.efunds.com.cn/" target="_blank">易方达</a></dd>
+    <dd><a href="http://www.jsfund.cn/" target="_blank">嘉实</a></dd>
+    <dd><a href="http://www.gffunds.com.cn/" target="_blank">广发</a></dd>
+    <dd><a href="http://www.huaan.com.cn/" target="_blank">华安</a></dd>
+    <dd><a href="http://www.fsfund.com/" target="_blank">华宝</a></dd>
+    <dd><a href="http://www.southernfund.com/" target="_blank">南方</a></dd>
+    <dd><a href="http://www.yhfund.com.cn" target="_blank">银华</a></dd>
+    <dd><a href="http://www.chinaamc.com/" target="_blank">华夏</a></dd>
+  </dl>
+  <dl>
+    <dt> 实用工具查询 </dt>
+    <dd><a href="http://qq.ip138.com/train/" target="_blank">火车时刻表</a></dd>
+    <dd><a href="http://www.fzbm.com/" target="_blank">福州便民网</a></dd>
+    <dd><a href="http://fz.soufun.com/" target="_blank">福州搜房网</a></dd>
+    <dd><a href="http://ditu.google.cn/" target="_blank">GOOGLE地图</a></dd>
+    <dd><a href="http://tool.chinaz.com/" target="_blank">中国站长工具</a></dd>
+    <dd><a href="http://tool.114la.com/gb2big.html" target="_blank">114查询</a></dd>
+    <dd><a href="http://shanghai.edushi.com/" target="_blank">上海三维地图</a></dd>
+    <dd><a href="http://www.ddmap.com/" target="_blank">丁丁网</a></dd>
+    <dd><a href="http://www.sh715.com/beian/Index.htm" target="_blank">上海企业备案</a></dd>
+    <dd><a href="http://www.8684.cn/" target="_blank">8684查询</a></dd>
+    <dd><a href="http://www.city8.com/" target="_blank">城市吧</a></dd>
+    <dd><a href="http://bjtime.cn/" target="_blank">北京时间</a></dd>
+    <dd><a href="http://www.miibeian.gov.cn/" target="_blank">备案</a></dd>
+    <dd><a href="http://www.xixii.cn" target="_blank">贤贤网</a></dd>
+    <dd><a href="http://www.daidd.my/" target="_blank">Daidd.my</a></dd>
+    <dd><a href="http://www.packetix.net/en/" target="_blank">Packetix</a></dd>
+    <dd><a href="http://www.shmetro.com/" target="_blank">上海地铁</a></dd>
+  </dl>
+  <dl>
+    <dt>Job</dt>
+    <dd><a href="http://www.jobui.com/" target="_blank">职友集</a></dd>
+    <dd><a href="http://www.51job.com/" target="_blank">51Job</a></dd>
+    <dd><a href="http://www.chinahr.com/index.htm" target="_blank">中华英才网</a></dd>
+    <dd><a href="http://www.zhaopin.com/" target="_blank">智联招聘</a></dd>
+    <dd><a href="http://www.cjol.com/" target="_blank">中国人才网</a></dd>
+    <dd><a href="http://www.happinesz.cn/" target="_blank">Happinesz</a></dd>
+    <dd><a href="http://www.shishangqiyi.com" target="_blank">时尚起义</a></dd>
+    <dd><a href="http://www.chinahr.com/" target="_blank">中华英才</a></dd>
+    <dd><a href="http://www.zhaopin.com/" target="_blank">智联招聘</a></dd>
+    <dd><a href="http://www.51job.com/" target="_blank">前程无忧</a></dd>
+    <dd><a href="http://www.guolairen.com/" target="_blank">过来人</a></dd>
+    <dd><a href="http://hr.baidu.com/" target="_blank">百度招聘</a></dd>
+    <dd><a href="http://job.taobao.com/" target="_blank">淘宝招聘</a></dd>
+    <dd><a href="http://career.sina.com.cn/" target="_blank">新浪招聘</a></dd>
+    <dd><a href="http://hr.sohu.com/" target="_blank">搜狐招聘</a></dd>
+    <dd><a href="http://hr.tencent.com/" target="_blank">腾讯招聘</a></dd>
+    <dd><a href="http://hr.163.com/" target="_blank">网易招聘</a></dd>
+  </dl>
+  <dl>
+    <dt>移动互联网</dt>
+    <dd><a href="http://sj.91.com/">91手机娱乐</a></dd>
+    <dd><a href="hhttp://www.anzhi.com/">安智市场</a></dd>
+    <dd><a href="http://www.hiapk.com/">安卓网</a></dd>
+    <dd><a href="http://www.ggg.cn/">极游网</a></dd>
+    <dd><a href="http://www.wandoujia.com/">豌豆荚</a></dd>
+    <dd><a href="http://game.open.uc.cn/">UC九游平台</a></dd>
+    <dd><a href="http://www.d.cn/">当乐网</a></dd>
+    <dd><a href="http://apk.gfan.com/">机峰市场</a></dd>
+    <dd><a href="http://www.appchina.com/app/cn.emagsoftware.gamehall/">中国移动游戏市场</a></dd>
+  </dl>
+</div>
+<div id="footer_wrapper">
+  <div id="footer"><span class="copyright"> DESIGNED BY RAY &nbsp&nbsp;&amp;&nbsp;&nbsp&copy; 2010 <a href="http://wkylin.com/">ray.com</a></span> <span class="top"><a href="#header">TOP</a></span> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"php",
+				"php"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ray/Desktop/1460550293486.json",
+		"/Users/ray/Desktop/1460552935615.json",
+		"/Users/ray/Desktop/1460551282360.json",
+		"/Users/ray/Desktop/1460551483291.json",
+		"/Library/WebServer/Documents/api/MinPHP/run/info.php",
+		"/Users/ray/Desktop/GooFlow-master/js/gooflow.js",
+		"/Library/WebServer/Documents/api/MinPHP/run/login.php",
+		"/Library/WebServer/Documents/api/MinPHP/run/menu.php",
+		"/Library/WebServer/Documents/api/db.sql",
+		"/Users/ray/Desktop/ApiManager-master/MinPHP/core/config.php",
+		"/Library/WebServer/Documents/ROCBOSS/app/config/db_config.php",
+		"/Library/WebServer/Documents/startbbs/index.php",
+		"/Library/WebServer/Documents/startbbs/app/cache/index.html",
+		"/Library/WebServer/Documents/startbbs/app/core/MY_Config.php",
+		"/private/etc/php.ini",
+		"/private/etc/apache2/httpd.conf",
+		"/Library/WebServer/Documents/ROCBOSS/system/db/DB.php",
+		"/Library/WebServer/Documents/ROCBOSS/index.php",
+		"/Library/WebServer/Documents/ROCBOSS/app/controller/admin.php",
+		"/Users/ray/Desktop/ROCBOSS_v2.1.0/install.sql",
+		"/Library/WebServer/Documents/wordpress/wp-config.php",
+		"/Library/WebServer/Documents/wordpress/index.php",
+		"/Library/WebServer/Documents/wordpress/wp-content/themes/cu 2/info.php",
+		"/Library/WebServer/Documents/wordpress/wp-content/themes/cu 2/header.php",
+		"/Library/WebServer/Documents/wordpress/wp-content/themes/index.php",
+		"/Library/WebServer/Documents/wordpress/wp-content/themes/cu 2/index.php",
+		"/Library/WebServer/Documents/wordpress/wp-content/themes/twentyfifteen/index.php",
+		"/Users/ray/Desktop/cu/index.php",
+		"/Users/ray/Desktop/cu/category.php",
+		"/Library/WebServer/Documents/a.php",
+		"/private/etc/php.ini.default",
+		"/Users/ray/Desktop/a.php",
+		"/Library/WebServer/Documents/index.php",
+		"/Library/WebServer/Documents/mysql.php",
+		"/<?php",
+		"/Volumes/NO NAME/潘睿/httpd.conf",
+		"/Library/WebServer/Documents/test/1.html",
+		"/Library/WebServer/Documents/test/a.js",
+		"/Users/ray/Desktop/qq1.html",
+		"/Users/ray/Downloads/w3cfuns_code.html",
+		"/Library/WebServer/Documents/test/jquery.min.js",
+		"/Library/WebServer/Documents/test/untitled",
+		"/Library/WebServer/Documents/test/index.php",
+		"/Users/ray/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Library/WebServer/Documents/test/app.html",
+		"/untitled",
+		"/private/etc/apache2/original/httpd.conf",
+		"/private/etc/apache2/httpd.conf.pre-update",
+		"/Library/WebServer/Documents/phpMyAdmin/config.inc.php",
+		"/Library/WebServer/Documents/phpMyAdmin/config.sample.inc副本.php",
+		"/Library/WebServer/Documents/phpMyAdmin/config.sample.inc.php",
+		"/Library/WebServer/Documents/phpMyAdmin/chk_rel.php",
+		"/Library/WebServer/Documents/index.html",
+		"/Library/WebServer/Documents/untitled"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"WEB前端个人博客",
+			" '",
+			"VeryCD",
+			"delete",
+			"DELETE",
+			"添加接口",
+			"captcha",
+			"gd2",
+			"RewriteEngine",
+			"php_pdo",
+			"php_pdo.dll",
+			"mysqli.default_socket",
+			"mysql.default_socket",
+			"mysqli.default_socket",
+			"3",
+			"pdo_mysql.default_socket",
+			"Directory",
+			" AllowOverride none",
+			"Directory",
+			"deny",
+			"deny from all",
+			"Deny from all",
+			"Deny"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "config.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 123.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

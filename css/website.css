@@ -1,0 +1,29 @@
+/*index css*/
+body { background: #202020; text-align: center; margin: 0 auto; width: 100%; font-size:14px; }
+#header { margin-left: auto; margin-right: auto; width: 100%; height: 100px; background: #c4e1f3; border-bottom: 10px solid #191919; min-width:966px; }
+#search { width:966px; height: 100%; margin: 0 auto; }
+/* logo */
+.logo { width: 215px; height: 53px; float: left; margin:30px 15px 0 0; display:inline; }
+/* input */
+input.seachinput { border:2px solid #999; background: #caced4; float: left; font-size: 20px; line-height:25px; margin:35px 5px 0 5px; width:340px; height:25px; overflow: hidden; padding: 2px 5px 2px 5px; display:block; }
+input.seachinput:focus{border:2px solid #caced4;background: #666;}
+/* search */
+#search_sort { margin-top:40px; width:370px; float:right; position:relative; }
+#search_sort ul li { width:72px; height:23px; float:left; overflow: hidden; display:block; text-align:center; }
+#search_sort ul li input {font-size:14px; overflow: hidden; cursor: pointer; font-weight: bold; border:0 none; background:none; }
+.more_search { position:absolute; top:-5px; left:5px; background:#202020; border:2px solid #999; padding:5px 0; }
+a.extend, a.extended { width:21px; height:21px; display:block; margin:0 auto; }
+a.extend { background:url(../images/extend.gif) 0 0 no-repeat; }
+a.extended { background:url(../images/extend.gif) 0 -21px no-repeat; }
+/* content */
+.content { width:966px; height:auto; font-size:14px; color:#eee; margin:0 auto;}
+.content dd { width:96px; float:left; display:none; }
+.content dt { width:962px; margin:0 auto; height:20px; line-height:20px; cursor:pointer; color:#000; clear:both; padding:5px 0; border:2px solid #111; background:url(../images/dt_bg_960.gif) 0 0 no-repeat; text-indent:2em; }
+.content .active dt { background:url(../images/dt_bg_960.gif) 0 -30px no-repeat; }
+.content .active dd { display:block; float:left; height:20px; padding:5px 0; text-align:center; }
+.content .active dd a { display:block; width:100%; }
+/* footer */
+#footer_wrapper { background:#303030; border-top:1px solid #ccc; clear:both; margin:20px 0 0 0; width:100%; }
+#footer { width:966px; height:50px; margin:0 auto; color:#fff; font-size:14px; line-height:30px; font-family:Georgia, "Times New Roman", Times, serif; }
+#footer .copyright { float:left; padding-top:10px; }
+#footer .top { float:right; padding-top:10px; }
