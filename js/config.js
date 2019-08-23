@@ -1,6 +1,6 @@
 var config = [
 	{
-		navigation:'名站导航',
+		navigation:'名站导航内容',
 		list:[
 			{
 				name:'Google',
